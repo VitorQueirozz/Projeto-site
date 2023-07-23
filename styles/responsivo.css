@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --corPrincipal: #FFFAF4;
+    --corTexto: #605E5F;
+    --corIcon: #66615D;
+}
+
+
+
+@media screen and (max-width: 1300px){
+    /*HOME*/
+    .content-img img{
+        width: 80%;
+        height: 75vh;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    /*SOBRE MIM*/
+    .img-sobre {
+        width: 50%;
+    }
+    .img-sobre img {
+        width: 400px;
+        max-height: 650px;
+    }
+    .text-sobre p {
+        font-size: 19px;
+    }
+    .text-sobre {
+        width: 45%;
+    }
+
+    /*PROJETOS*/
+    .pojetos-img1 img{
+        height: 350px;
+    } 
+    .pojetos-img2 img{
+        height: 500px;
+    }
+    
+    .pojetos-img3 img{
+        height: 650px;
+    }
+
+    /* CONTATO EMAIL */
+    .content-contatoEmail {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    /*PROJETOS*/
+    .pojetos-img1 img{
+        height: 350px;
+    } 
+    .pojetos-img2 img{
+        height: 400px;
+    }
+    
+    .pojetos-img3 img{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    /*HOME*/
+    .content-img img{
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    /*SOBRE MIM*/
+    .container-sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        margin-top: 150px;
+    }
+    .img-sobre {
+        width: 100%;
+    }
+    .img-sobre img {
+        width: 80%;
+        max-height: 450px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .text-sobre p {
+        font-size: 19px;
+    }
+    .text-sobre {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /*PROJETOS*/
+    .container-projetos {
+        /* height: 100%; */
+        margin-top: 150px;
+    }
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .pojetos-img1 img{
+        height: 350px;
+    } 
+    .pojetos-img2 img{
+        height: 400px;
+    }
+    
+    .pojetos-img3 img{
+        height: 500px;
+    }
+
+    /*CONTATO*/
+    .container-contact {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .content-contacts {
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 30px;
+    }    
+    .contact-img img {
+        width: 100%;
+        max-height: 550px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    /*CONTATO-EMAIL*/
+    .container-contatoEmail {
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } 
+
+    .content-dados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-dadosEmpresa {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+    }
+
+    .content-inputs {
+        gap: 15px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    /*HOME*/
+    .container {
+        height: 100%;
+    }
+    .content-logo img{
+       display: none;
+    }
+    .content-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    /*CONTATO*/
+    .content-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin: 50px 0;
+    } 
+    .contact p,
+    .contact i {
+        font-size: 14px;
+        color: var(--corTexto);
+    }
+
+    /*SOBRE MIM*/
+    .img-sobre img {
+        width: 100%;
+        max-height: 350px;
+    }
+
+    /*PROJETOS*/
+    .container-projetos {
+        height: 100%;
+        margin-top: 200px;
+    }
+
+    /* CONTATO EMAIL */
+    .content-contatoEmail {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    /*HOME*/
+    .content-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .content-footer {
+        background-color: var(--corIcon);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    .footer-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .footer-copy p {
+        font-size: 14px;
+    }
+    .footer-midias i {
+        font-size: 20px;
+    }
+
+    /*PROJETOS*/
+    .pojetos-img3 img{
+        height: 420px;
+    }
+
+}
