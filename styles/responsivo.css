@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 :root {
     --corPrincipal: #FFFAF4;
     --corTexto: #605E5F;
     --corIcon: #66615D;
+    --corIconFooter: #fff;
+    --corFooter: #E7C8BC;
+    --corBackgoundProjetos: #F1DCD1;
 }
 
-
+@media screen and (max-width: 1500px){
+    /*SOBRE MIM*/
+    .img-sobre {
+        width: 50%;
+    }
+    .img-sobre img {
+        width: 400px;
+        max-height: 650px;
+    }
+    .text-sobre p {
+        font-size: 19px;
+    }
+    .text-sobre {
+        width: 40%;
+    }
+}
 
 @media screen and (max-width: 1300px){
     /*HOME*/
@@ -33,15 +52,21 @@
     }
 
     /*PROJETOS*/
-    .pojetos-img1 img{
-        height: 350px;
-    } 
-    .pojetos-img2 img{
-        height: 500px;
+    .slider,
+    .sliderOne,
+    .sliderThre{
+        width: 400px !important;
+        height: 300px !important;
     }
-    
-    .pojetos-img3 img{
-        height: 650px;
+   
+    .container-slider-images {
+        width: 450px;
+    }
+
+    .prev-button,
+    .next-button {
+        width: 15px;
+        height: 15px;
     }
 
     /* CONTATO EMAIL */
@@ -52,15 +77,30 @@
 
 @media screen and (max-width: 1120px) {
     /*PROJETOS*/
-    .pojetos-img1 img{
-        height: 350px;
-    } 
-    .pojetos-img2 img{
-        height: 400px;
+    .slider,
+    .sliderOne,
+    .sliderThre{
+        width: 400px !important;
+        height: 250px !important;
     }
-    
-    .pojetos-img3 img{
-        height: 500px;
+
+    .projetos-img1,
+    .projetos-img2,
+    .projetos-img3 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 65px 0;
+    }
+
+    .projetos p {
+       position: absolute;
+       left: 0;
+       padding: 0 30px;
+       text-align: justify;
     }
 }
 
@@ -71,6 +111,10 @@
         height: 60vh;
         object-fit: cover;
         object-position: top;
+    }
+
+    .content-title img {
+        width: 400px;
     }
 
     /*SOBRE MIM*/
@@ -97,29 +141,16 @@
     .text-sobre {
         width: 80%;
         margin-bottom: 20px;
+        padding: 0px 0px 0px 0;
     }
 
     /*PROJETOS*/
-    .container-projetos {
-        /* height: 100%; */
-        margin-top: 150px;
-    }
     .projetos {
         display: flex;
         flex-direction: column;
         gap: 20px;
         height: 100%;
         margin-bottom: 20px;
-    }
-    .pojetos-img1 img{
-        height: 350px;
-    } 
-    .pojetos-img2 img{
-        height: 400px;
-    }
-    
-    .pojetos-img3 img{
-        height: 500px;
     }
 
     /*CONTATO*/
@@ -179,6 +210,9 @@
         align-items: center;
         padding: 30px 0;
     }
+    .content-title img {
+        width: 350px;
+    }
 
     /*CONTATO*/
     .content-contact {
@@ -210,7 +244,6 @@
     /*PROJETOS*/
     .container-projetos {
         height: 100%;
-        margin-top: 200px;
     }
 
     /* CONTATO EMAIL */
@@ -219,8 +252,24 @@
     }
 }
 
+@media screen and (max-width: 550px){
+    .slider,
+    .sliderOne,
+    .sliderThre{
+        width: 350px !important;
+        height: 250px !important;
+    }
+
+    .container-slider-images {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 450px){
     /*HOME*/
+    .content-title img {
+        width: 300px;
+    }
     .content-contact {
         display: flex;
         align-items: center;
@@ -229,7 +278,6 @@
         text-align: center;
     }
     .content-footer {
-        background-color: var(--corIcon);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -250,10 +298,42 @@
     .footer-midias i {
         font-size: 20px;
     }
-
-    /*PROJETOS*/
-    .pojetos-img3 img{
-        height: 420px;
+    .container-projetos h1 {
+        top: 38px;
+        left: 5px;
     }
 
+    /*PROJETOS*/
+
+    .slider,
+    .sliderOne,
+    .sliderThre{
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    .container-slider-images {
+        width: 350px;
+    }
+
+    
+    .projetos-img1,
+    .projetos-img2,
+    .projetos-img3 {
+        min-height: 500px;
+        padding: 110px 0;
+    }
+}
+
+@media screen and (max-width: 355px){
+    .content-contact {
+        gap: 15px;
+        padding-right: 3px;
+    }
+    .contact p, .contact i {
+        font-size: 13px;
+    }
+    .container-slider-images {
+        width: 300px;
+    }
 }
