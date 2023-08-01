@@ -299,6 +299,9 @@
     .container-slider-images {
         width: 400px;
     } */
+    .container-projetos h1 {
+        font-size: 23px;
+    }
     .projetos h2{
         font-size: 18px;
         left: 13px;
