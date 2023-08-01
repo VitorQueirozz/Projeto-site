@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --corPrincipal: #FFFAF4;
@@ -174,11 +175,11 @@ body {
 /* PROJETOS */
 
 .container-projetos h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Playfair Display', serif;
     position: absolute;
     color: var(--corTexto);
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 100;
     /* margin: 80px 50px 50px 50px; */
     top: 25px;
     left: 35px;
@@ -216,7 +217,7 @@ body {
     border-radius: 3px;
     position: relative;
     /* min-height: 500px; */
-    min-height: 26vw;
+    min-height: 30vw;
 }
 
 .projetos-img1 h1 {
@@ -282,7 +283,7 @@ body {
 .projetos-img2 .container-slider-images img,
 .projetos-img3 .container-slider-images img{
     width: 100%;
-    height: 26vw;
+    height: 30vw;
     transition: 0.6s;
     box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.123);
 }
@@ -305,11 +306,12 @@ body {
 
 .projetos h2{
     position: absolute;
-    font-family: 'Sacramento', cursive;
-    font-weight: 500;
-    font-size: 26px;
+    font-family: 'Niramit', sans-serif;
+    color: var(--corTexto);
+    font-weight: 400;
+    font-size: 18px;
     bottom: -40px;
-    left: 17px;
+    left: 25px;
 }
 
 /* .projetos h2:after {
@@ -339,6 +341,12 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.entrar-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
 
 .content-midias {
@@ -385,8 +393,11 @@ body {
 }
 
 .contact-img img {
-    height: 86%;
+    height: 85%;
     padding-top: 50px;
+    width: 650px;
+    object-fit: cover;
+    object-position: top;
 }
 
 /* CONTATO EMAIL */
@@ -478,12 +489,15 @@ body {
 }
 
 .content-local div h2 {
+    font-family: 'Niramit', sans-serif;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 .content-local div p {
-    color: rgba(255, 255, 255, 0.685);
+    font-family: 'Niramit', sans-serif;
+    color: var(--corFooter);
 }
 
 .content-inputs {
@@ -556,7 +570,7 @@ body {
 }
 
 .content-inputs input[type=submit]:hover {
-    background-color: var(--corTexto);
+    background-color: rgba(90, 102, 90, 0.692);
 }
 
 /*FOOTER*/
@@ -577,12 +591,14 @@ body {
 
 .footer-copy p {
     color: var(--corTexto);
-    font-size: 17px;
+    font-size: 14px;
+    font-family: 'Niramit', sans-serif;
 }
 
 .footer-copy a {
     text-decoration: none;
     color: var(--corTexto);
+    font-family: 'Niramit', sans-serif;
 }
 
 .footer-midias {
