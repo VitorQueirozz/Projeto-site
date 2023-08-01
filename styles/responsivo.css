@@ -53,16 +53,6 @@
     }
 
     /*PROJETOS*/
-    /* .slider,
-    .sliderOne,
-    .sliderThre{
-        width: 400px !important;
-        height: 300px !important;
-    } */
-   
-    /* .container-slider-images {
-        width: 450px;
-    } */
     .projetos-img1,
     .projetos-img2,
     .projetos-img3 {
@@ -88,14 +78,7 @@
 }
 
 @media screen and (max-width: 1120px) {
-    /*PROJETOS*/
-    /* .slider,
-    .sliderOne,
-    .sliderThre{
-        width: 400px !important;
-        height: 250px !important;
-    } */
-
+    /* PROJETOS */
     .projetos-img1,
     .projetos-img2,
     .projetos-img3 {
@@ -156,14 +139,7 @@
         padding: 0px 0px 0px 0;
     }
 
-    /*PROJETOS*/
-    /* .projetos {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        height: 100%;
-        margin-bottom: 20px;
-    } */
+    /* PROJETOS */
 
     .projetos {
         grid-template-columns: 1fr;
@@ -245,8 +221,6 @@
     .content-title img {
         width: 350px;
     }
-
-    /*CONTATO*/
     .content-contact {
         display: flex;
         align-items: center;
@@ -289,16 +263,7 @@
 }
 
 @media screen and (max-width: 550px){
-    /* .slider,
-    .sliderOne,
-    .sliderThre{
-        width: 350px !important;
-        height: 250px !important;
-    }
-
-    .container-slider-images {
-        width: 400px;
-    } */
+    /* PROJETOS */
     .container-projetos h1 {
         font-size: 23px;
     }
@@ -320,6 +285,7 @@
         gap: 20px;
         text-align: center;
     }
+    /* FOOTER */
     .content-footer {
         display: flex;
         flex-direction: column;
@@ -341,6 +307,7 @@
     .footer-midias i {
         font-size: 20px;
     }
+    /* PROJETOS */
     .container-projetos h1 {
         top: 38px;
         left: 10px;
@@ -348,29 +315,10 @@
     .content-logo-sobremim, .content-logo-projetos {
         right: 0px;
     }
-
-    /*PROJETOS*/
-
-    /* .slider,
-    .sliderOne,
-    .sliderThre{
-        width: 300px !important;
-        height: 200px !important;
-    }
-
-    .container-slider-images {
-        width: 350px;
-    }
-
-    .projetos-img1,
-    .projetos-img2,
-    .projetos-img3 {
-        min-height: 500px;
-        padding: 110px 0;
-    } */
 }
 
 @media screen and (max-width: 355px){
+    /* HOME */
     .content-contact {
         gap: 15px;
         padding-right: 3px;
@@ -378,7 +326,4 @@
     .contact p, .contact i {
         font-size: 12px;
     }
-    /* .container-slider-images {
-        width: 300px;
-    } */
 }
