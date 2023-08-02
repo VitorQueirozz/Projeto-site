@@ -356,8 +356,8 @@ body {
 
 .contact-img img {
     height: 85%;
-    padding-top: 50px;
-    width: 650px;
+    padding-top: 80px;
+    width: 800px;
     object-fit: cover;
     object-position: top;
 }
