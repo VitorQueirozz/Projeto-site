@@ -102,10 +102,10 @@
 @media screen and (max-width: 900px){
     /*HOME*/
     .content-img img{
-        width: 130%;
+        width: 100%;
         height: 60vh;
         object-fit: cover;
-        object-position: right;
+        object-position: top;
     }
 
     .content-title img {
