@@ -208,14 +208,10 @@
 @media screen and (max-width: 650px){
     /*HOME*/
     .content-img img{
-        height: 50vh;
+        height: 55vh;
     }
     .container {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
+        height: 100%;
     }
     .content-logo img{
        display: none;
