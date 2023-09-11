@@ -114,3 +114,4 @@ btnPrevOne.addEventListener('click', prevSliderOne)
 
 btnNextThre.addEventListener('click', nextSliderThre)
 btnPrevThre.addEventListener('click', prevSliderThre)
+

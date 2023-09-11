@@ -269,6 +269,26 @@
     .content-contatoEmail {
         width: 90%;
     }
+
+    /* EVENTOS */
+    .container-eventos img {
+        width: 100%;
+        height: 50%;
+        cursor: pointer;
+    }
+
+    .eventos-img2 .container-eventos img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .eventos-img3 .container-eventos img {
+        width: 100%;
+        height: 50%;
+    } 
+    #imagem-ampliada img {
+        max-width: 98%;
+    }
 }
 
 @media screen and (max-width: 550px){
