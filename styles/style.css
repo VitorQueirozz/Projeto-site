@@ -364,6 +364,10 @@ body {
 
 /* CONTATO EMAIL */
 
+.content-logo-contatoEmail {
+    margin-top: 5px;
+}
+
 .container-contatoEmail {
     display: flex;
     flex-direction: column;
