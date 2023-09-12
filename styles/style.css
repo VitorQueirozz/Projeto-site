@@ -414,7 +414,7 @@ body {
 
 .content-dadosEmpresa {
     padding: 30px 20px;
-    background-color: var(--corIcon);
+    background-color: var(--corFooter);
     border-radius: 10px 0 0 10px;
     display: flex;
     flex-direction: column;
@@ -424,7 +424,7 @@ body {
 }
 
 .content-local {
-    background-color: rgba(168, 219, 168, 0.123);
+    background-color: #ccc4bc;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -459,7 +459,7 @@ body {
 
 .content-local div p {
     font-family: 'Niramit', sans-serif;
-    color: var(--corFooter);
+    color: var(--corTexto);
 }
 
 .content-inputs {
