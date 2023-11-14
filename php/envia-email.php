@@ -1,10 +1,11 @@
 <?php
   //Variáveis
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $telefone = $_POST['telefone'];
-  $assunto = $_POST['assunto'];
-  $mensagem = $_POST['mensagem'];
+  $data = $_POST;
+  $nome = $data['nome'];
+  $email = $data['email'];
+  $telefone = $data['telefone'];
+  $assunto = $data['assunto'];
+  $mensagem = $data['mensagem'];
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 

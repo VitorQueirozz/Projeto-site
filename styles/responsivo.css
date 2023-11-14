@@ -158,6 +158,10 @@
         height: 60vw;
     }
 
+    section .item img {
+        height: 325px;
+    }
+
     /*CONTATO*/
     .container-contact {
         height: 100%;
@@ -263,6 +267,10 @@
 
     .projetos {
         padding-top: 150px;
+    }
+
+    .owl-carousel .owl-item img {
+        padding: 10px;
     }
 
     /* CONTATO EMAIL */

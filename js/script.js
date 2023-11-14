@@ -10,9 +10,19 @@ const sliderThre = document.querySelectorAll('.sliderThre');
 const btnPrevThre = document.getElementById('prev-buttonThre');
 const btnNextThre = document.getElementById('next-buttonThre');
 
+const sliderTwo = document.querySelectorAll('.sliderTwo');
+const btnPrevTwo = document.getElementById('prev-buttonTwo');
+const btnNextTwo = document.getElementById('next-buttonTwo');
+
+const sliderfor = document.querySelectorAll('.sliderfor');
+const btnPrevfor = document.getElementById('prev-buttonfor');
+const btnNextfor = document.getElementById('next-buttonfor');
+
 let currentSlide = 0;
 let currentSlideOne = 0;
 let currentSlideThre = 0;
+let currentSlideTwo = 0;
+let currentSlidefor = 0;
 
 function hideSlider() {
   slider.forEach(item => item.classList.remove('on'))
@@ -102,9 +112,71 @@ function prevSliderThre() {
     showSliderThre()
 }
 
+/***************** */
+
+function hideSliderTwo() {
+  sliderTwo.forEach(item => item.classList.remove('on'))
+}
+
+function showSliderTwo() {
+  sliderTwo[currentSlideTwo].classList.add('on')
+}
+
+function nextSliderTwo() {
+  hideSliderTwo()
+  if(currentSlideTwo === sliderTwo.length -1) {
+    currentSlideTwo = 0
+  } else {
+    currentSlideTwo++
+  }
+  showSliderTwo()
+}
+
+function prevSliderTwo() {
+  hideSliderTwo()
+  if(currentSlideTwo === 0) {
+    currentSlideTwo = sliderTwo.length -1
+  } else {
+    currentSlideTwo--
+  }
+  showSliderTwo()
+}
+
+/***************** */
+
+function hideSliderfor() {
+  sliderfor.forEach(item => item.classList.remove('on'))
+}
+
+function showSliderfor() {
+  sliderfor[currentSlidefor].classList.add('on')
+}
+
+function nextSliderfor() {
+  hideSliderfor()
+  if(currentSlidefor === sliderfor.length -1) {
+    currentSlidefor = 0
+  } else {
+    currentSlidefor++
+  }
+  showSliderfor()
+}
+
+function prevSliderfor() {
+  hideSliderfor()
+  if(currentSlidefor === 0) {
+    currentSlidefor = sliderfor.length -1
+  } else {
+    currentSlidefor--
+  }
+  showSliderfor()
+}
+
 setInterval(nextSlider, 4000)
 setInterval(nextSliderOne, 4000)
 setInterval(nextSliderThre, 4000)
+setInterval(nextSliderTwo, 4000)
+setInterval(nextSliderfor, 4000)
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
@@ -114,4 +186,7 @@ btnPrevOne.addEventListener('click', prevSliderOne)
 
 btnNextThre.addEventListener('click', nextSliderThre)
 btnPrevThre.addEventListener('click', prevSliderThre)
+
+btnNextfor.addEventListener('click', nextSliderfor)
+btnPrevfor.addEventListener('click', prevSliderfor)
 
